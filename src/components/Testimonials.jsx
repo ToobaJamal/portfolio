@@ -16,6 +16,10 @@ const Testimonial = styled.div`
     justify-content: space-around;
 `
 
+const TestimonialTitle = styled.h1`
+    text-align: center;
+`
+
 const Name = styled.h3`
    color: red;
  
@@ -28,7 +32,7 @@ const Desc = styled.p`
 export default function Testimonials() {
     return (
         <>
-            <h1>Testimonials</h1>
+            <TestimonialTitle>Testimonials</TestimonialTitle>
             <TestimonialsDiv>
             <Testimonial>
                 <Name>Winifred John</Name>
