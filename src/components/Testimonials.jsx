@@ -1,30 +1,48 @@
 import styled from 'styled-components'
-
+import { Title } from '../pages/About'
 const TestimonialsDiv = styled.div`
-    border: 1px solid black;
+    max-width: 850px;
+    margin-inline: auto;
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-around;
-    gap: 2em;
-    margin-block: 1em;
-    padding-block: 3em;
+    gap: 0.5em;
+    margin-block: 2em;
+    padding-inline: 2em;
 `
 
 const Testimonial = styled.div`
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    max-width: 350px;
+    @media (max-width: 860px) and (min-width: 800px){
+        max-width: 320px;
+        }
+    @media (max-width: 800px) and (min-width: 720px){
+        max-width: 300px;
+        }
 `
 
 const TestimonialTitle = styled.h1`
     text-align: center;
+    margin-bottom: 1em;
+    @media (max-width: 770px) {
+        font-size: 2em;
+        }
 `
 
 const Name = styled.h3`
    color: red;
+   margin: 0;
+   padding: 0;
  
 `
 const Desc = styled.p`
+    margin:0;
+    padding: 0;
    color: green;
 
 `
@@ -32,7 +50,7 @@ const Desc = styled.p`
 export default function Testimonials() {
     return (
         <>
-            <TestimonialTitle>Testimonials</TestimonialTitle>
+            <Title>Testimonials</Title>
             <TestimonialsDiv>
             <Testimonial>
                 <Name>Winifred John</Name>
