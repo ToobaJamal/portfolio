@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import Navbar
  from './components/Navbar'
@@ -12,6 +12,7 @@ import Navbar
   Route,
   Routes
 } from "react-router-dom"
+import ProjectDetail from './pages/ProjectDetail'
 
 
  function App() {
@@ -23,7 +24,9 @@ import Navbar
         <Route path='/' exact element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/hire' element={<Hire />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/projects' element={<Projects/>}>
+          <Route index={false} path="/projects/:title" element={<ProjectDetail/>} />
+        </Route>
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
