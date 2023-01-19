@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { Title } from '../pages/About'
+import { Title } from "../components/WhyMe"
+
 const TestimonialsDiv = styled.div`
     max-width: 850px;
     margin-inline: auto;
@@ -7,9 +8,14 @@ const TestimonialsDiv = styled.div`
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    gap: 0.5em;
+    gap: 0.7em;
     margin-block: 2em;
     padding-inline: 2em;
+    border: 2px dotted black;
+    @media(max-width: 450px) {
+        width: 100%;
+        padding-inline: 0;
+    }
 `
 
 const Testimonial = styled.div`
@@ -49,7 +55,7 @@ const Desc = styled.p`
 
 export default function Testimonials() {
     return (
-        <>
+        <div class="testimonials">
             <Title>Testimonials</Title>
             <TestimonialsDiv>
             <Testimonial>
@@ -83,6 +89,6 @@ export default function Testimonials() {
                 </Desc>
             </Testimonial>
             </TestimonialsDiv>
-        </>
+        </div>
     )
 }
