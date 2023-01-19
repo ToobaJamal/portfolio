@@ -9,11 +9,9 @@ export const ContainerDiv = styled.div`
 `
 
 export const Title = styled.h1`
-    color: #303537;
     text-align: center;
     margin: 0 0 0.7em 0;
     padding-top: 60px;
-    
     @media (max-width: 730px) {
         padding-top: 0px;
     }
@@ -29,6 +27,9 @@ export const Desc = styled.div`
     margin-bottom: 2em;
     width: 80%;
     font-weight: 500;
+    @media(max-width: 500px) {
+        width: 100%;
+    }
 `
 
 export const Highlight = styled.span`
