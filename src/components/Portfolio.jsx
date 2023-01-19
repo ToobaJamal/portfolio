@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom"
 import projectsData from '../data/projectsData'
 import technicalWritingData from '../data/technicalWritingData'
-import { ContainerDiv, Title } from "../pages/About"
+import { Title } from "../components/WhyMe"
 
 const PortfolioDiv = styled.div`
 padding-inline: 2em;
@@ -13,10 +13,18 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100vw;
-padding-block: 1em;
-margin-bottom: 4em;
+padding-bottom: 1em;
+margin-bottom: 100px;
 `
-
+const ProjHeading = styled.h3`
+    color: red;
+    border: 2px dotted green;
+    margin-bottom: 1em;
+    font-size: 1.6em;
+    @media(max-width: 440px) {
+        font-size: 1.2em;
+    }
+`
 const ArticleTitle = styled.div`
     text-align: center;
     max-width: 300px;
@@ -71,6 +79,8 @@ const ProjectsContainerParent = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    gap: 0.6em;
+    margin-bottom: 1em;
     @media (max-width: 470px) {
         width: 380px;
     }
@@ -147,12 +157,12 @@ export default function Portfolio() {
             <Button onClick={() => setProjectsType("web-dev")}>Web dev</Button>
             <Button onClick={() => setProjectsType("writing")}>Technical writing</Button>
         </ButtonContainer>
-        {projectsType === "all" ? <PortfolioDiv ><h3>Web Development Projects</h3> <ProjectsContainerParent>{webProjects}</ProjectsContainerParent> 
-        <h3>Technical Writing Projects</h3> <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
+        {projectsType === "all" ? <PortfolioDiv ><ProjHeading>Web Development Projects</ProjHeading> <ProjectsContainerParent>{webProjects}</ProjectsContainerParent> 
+        <ProjHeading>Technical Writing Projects</ProjHeading> <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
         <a href="https://www.freecodecamp.org/news/author/tooba/" className="check-out">Check out more of my writing</a>
         </PortfolioDiv > 
-        : projectsType === "web-dev" ? <PortfolioDiv><h3>Web Development Projects</h3> {webProjects}</PortfolioDiv> 
-        : projectsType === "writing" ? <PortfolioDiv><h3>Technical Writing Projects</h3> {techWritingProjects}</PortfolioDiv> : ""}
+        : projectsType === "web-dev" ? <PortfolioDiv><ProjHeading>Web Development Projects</ProjHeading> {webProjects}</PortfolioDiv> 
+        : projectsType === "writing" ? <PortfolioDiv><ProjHeading>Technical Writing Projects</ProjHeading> {techWritingProjects}</PortfolioDiv> : ""}
         </>
     )
 }
