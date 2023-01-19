@@ -38,7 +38,13 @@ const SkillsParent = styled.div`
     justify-content: center;
     width: 80%;
     height: 40%;
-    
+    border: 1px solid red;
+    @media(max-width: 500px) {
+        gap: 0.3em;
+    }
+    @media(max-width: 380px) {
+        bottom:  2.4em;
+    }
 `
 const Skills = styled.span`
     display: flex;
@@ -48,8 +54,14 @@ const Skills = styled.span`
     color: #FFF5EE;
     background-color: #DE3163;
     border-radius: 10px;
-    
     font-size: 0.8em;
+    margin: 0;
+    @media (max-width: 500px) {
+        font-size: 0.6em;
+    }
+    @media(max-width: 380px) {
+        padding: 0.4em;
+    }
 `
 
 const ProjectContainer = styled.div`
@@ -63,9 +75,10 @@ const ProjectContainer = styled.div`
     min-width: 0;
     min-height: 0;
     color: #303537;
+    transition: all 0.2s ease-in-out;
 
     &:hover{
-        transform: translate(-20px, -10px);
+        transform: scale(1.1);
         ${ProjectImg} {
             -webkit-filter: brightness(70%);
         },
@@ -79,6 +92,9 @@ const ProjectTitle = styled.p`
         color: #303537;
         border: 1px dotted green;
         text-align: center;
+        @media (max-width: 440px) {
+            font-size: .8em;
+        }
 `
 
 export default function Projects() {
