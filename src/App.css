@@ -25,7 +25,6 @@ h1 {
 h3 {
   margin: 0;
   padding-block: 1.2em;
-  border: 1px solid hotpink;
   text-align: center;
 }
 
@@ -36,8 +35,9 @@ a {
   font-weight: 500;
 }
 
-a:hover {
-  color: #DE3163;
+.testimonials {
+  background-color: yellow;
+  padding: 2em;
 }
 
 .check-out {
