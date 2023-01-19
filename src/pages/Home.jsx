@@ -3,29 +3,23 @@ import Testimonials from "../components/Testimonials"
 import Portfolio from "../components/Portfolio"
 import styled, {keyframes} from 'styled-components'
 
-export const anim = keyframes`
-0% {
-    transform: translateX(-100%);
-}
-100% {
-    transform: translateX(0);
-}
-`
-
 const IntroSection = styled.div`
 height: 100vh;
 text-align: center;
 display: flex;
 flex-direction: column;
 justify-content: center;
-
 width: 50vw;
-padding-block: 1em;
+padding-top: 56px;
 padding-inline: 2em;
 margin-inline: auto;
 
 @media (max-width: 802px) {
     width: 70%;
+}
+@media(max-width: 730px) {
+    padding: 0;
+    height: calc(100vh - 88.781px);
 }
 @media (max-width: 600px) {
     width: 90%;
