@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Title } from '../pages/About'
+
 const WhyMeSection = styled.div`
     height: 100vh;
     text-align: center;
@@ -9,11 +9,21 @@ const WhyMeSection = styled.div`
     align-items: center;
     width: 100vw;
     padding-block: 1em;
+    min-height: 0;
+    border: 1px solid red;
+    @media(max-width: 400px) {
+        padding-inline: 1em;
+    }
 `
 
-// const Title = styled.h1`
-//     margin-bottom: 0.8em;
-// `
+export const Title = styled.h1`
+    text-align: center;
+    margin-bottom: 0.5em;
+    @media (max-width: 450px) {
+        font-size: 2em;
+    }
+`
+
 const ServiceContainer = styled.div`
     width: 400px;
 `
@@ -27,11 +37,7 @@ const Services = styled.div`
    padding: 1em;
    max-width: 1000px;
    min-width: 0;
-   margin-top: 2em;
-   @media (max-width: 800px) {
-    width: 90%;
-    gap: 0.6em;
-   }
+   
 `
 
 const ServiceTitle = styled.p`
@@ -46,9 +52,11 @@ const ServiceDesc = styled.p`
     margin: 0;
     padding: 1em;
     @media (max-width: 400px) {
-        
+        width: 90%;
+        margin-inline: auto;
        }
 `
+
 
 export default function WhyMe() {
     return (
