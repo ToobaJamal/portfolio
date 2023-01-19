@@ -12,12 +12,35 @@ const ButtonContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1.5em;
+    border: 1px solid red;
+
+    @media(max-width: 400px) {
+        width: 250px;
+    }
 `
 
 const Button = styled.a`
-    background-color: yellow;
-    padding: 1em;
+    color: #FFF5EE;
+    background-color: #DE3163;
+    padding-inline: 1em;
+    padding-block: 0.6em;
     border-radius: 10px;
+    margin-bottom: 0.7em;
+    &:hover{
+        background-color: #cf2359;
+        }
+    &:active {
+        background-color: #cf2359;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+    }
+
+    @media(max-width: 620px) {
+        font-size:1em;
+    }
+    @media(max-width: 400px) {
+        font-size: 0.8em;
+    }
 `
 const ProjImgContainer = styled.div`
     width: 80%;
@@ -42,7 +65,7 @@ export default function ProjectDetail(props) {
             <Title>{thisProject.title}</Title>
             {thisProject.hasOwnProperty('gitHub') ? <ButtonContainer><Button href={thisProject.link}>Live Demo</Button> 
             <Button href={thisProject.gitHub}>GitHub</Button> </ButtonContainer> 
-            : <Button href={thisProject.link}>Read more</Button>}
+            : <ButtonContainer><Button href={thisProject.link}>Read more</Button></ButtonContainer>}
             
             <Desc>{thisProject.detail}</Desc>
             <ProjImgContainer>
