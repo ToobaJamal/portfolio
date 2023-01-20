@@ -15,6 +15,7 @@ const TestimonialsDiv = styled.div`
     @media(max-width: 450px) {
         width: 100%;
         padding-inline: 0;
+        margin-inline: 0;
     }
 `
 
