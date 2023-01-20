@@ -10,9 +10,11 @@ const WhyMeSection = styled.div`
     width: 100vw;
     padding-block: 1em;
     min-height: 0;
+    margin-inline: auto;
     border: 1px solid red;
     @media(max-width: 400px) {
         padding-inline: 1em;
+        margin-inline: 0;
     }
 `
 
@@ -20,12 +22,12 @@ export const Title = styled.h1`
     text-align: center;
     margin-bottom: 0.5em;
     @media (max-width: 450px) {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 `
 
 const ServiceContainer = styled.div`
-    width: 400px;
+    max-width: 400px;
 `
 
 const Services = styled.div`
@@ -37,7 +39,9 @@ const Services = styled.div`
    padding: 1em;
    max-width: 1000px;
    min-width: 0;
-   
+   @media(max-width: 400px) {
+    padding: 0;
+   }
 `
 
 const ServiceTitle = styled.p`
@@ -52,7 +56,7 @@ const ServiceDesc = styled.p`
     margin: 0;
     padding: 1em;
     @media (max-width: 400px) {
-        width: 90%;
+        width: 100%;
         margin-inline: auto;
        }
 `
