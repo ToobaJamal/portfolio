@@ -127,9 +127,7 @@ export default function Portfolio() {
     const [projectsType, setProjectsType] = useState("all")
 
     const webDevProjects = projectsData.projects
-    console.log(webDevProjects)
     const writingProjects = technicalWritingData.articles
-    console.log(projectsType)
     const webProjects = 
     webDevProjects.map(project => (
      <Link to={`/projects/${project.title}`}>
