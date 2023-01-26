@@ -30,7 +30,6 @@ const ServiceContainer = styled.div`
     width: 400px;
     height: 150px;
     background-color:#FAF9F6;
-  
     box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 6px;
     display: flex;
     flex-direction: column;
@@ -56,7 +55,7 @@ const Services = styled.div`
 `
 
 const ServiceTitle = styled.p`
-    background-color: #FFFFF0;
+    background-color: #FAF9F6;;
     font-size: 1.3em;
     font-weight: 600;
     margin: 0;
@@ -66,7 +65,7 @@ const ServiceTitle = styled.p`
 `
 
 const ServiceDesc = styled.p`
-background-color: #FFFFF0;
+background-color: #FAF9F6;;
     font-size: 1em;
     font-weight: 500;
     margin: 0;
