@@ -158,18 +158,18 @@ export default function Portfolio() {
     ))
     return (
         <>
-        <PortfolioTitle>Portfolio</PortfolioTitle>
+        <PortfolioTitle data-aos="flip-right">Portfolio</PortfolioTitle>
         <ButtonContainer>
             <Button onClick={() => setProjectsType("all")}>All</Button>
             <Button onClick={() => setProjectsType("web-dev")}>Web dev</Button>
             <Button onClick={() => setProjectsType("writing")}>Technical writing</Button>
         </ButtonContainer>
-        {projectsType === "all" ? <PortfolioDiv ><ProjHeading>Web Development Projects</ProjHeading> <ProjectsContainerParent>{webProjects}</ProjectsContainerParent> 
-        <ProjHeading>Technical Writing Projects</ProjHeading> <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
+        {projectsType === "all" ? <PortfolioDiv ><ProjHeading data-aos="flip-right">Web Development Projects</ProjHeading> <ProjectsContainerParent>{webProjects}</ProjectsContainerParent> 
+        <ProjHeading data-aos="flip-right">Technical Writing Projects</ProjHeading> <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
         <a href="https://www.freecodecamp.org/news/author/tooba/" className="check-out">Check out more of my writing</a>
         </PortfolioDiv > 
-        : projectsType === "web-dev" ? <PortfolioDiv><ProjHeading>Web Development Projects</ProjHeading> {webProjects}</PortfolioDiv> 
-        : projectsType === "writing" ? <PortfolioDiv><ProjHeading>Technical Writing Projects</ProjHeading> {techWritingProjects}</PortfolioDiv> : ""}
+        : projectsType === "web-dev" ? <PortfolioDiv><ProjHeading data-aos="flip-right">Web Development Projects</ProjHeading> {webProjects}</PortfolioDiv> 
+        : projectsType === "writing" ? <PortfolioDiv><ProjHeading data-aos="flip-right">Technical Writing Projects</ProjHeading> {techWritingProjects}</PortfolioDiv> : ""}
         </>
     )
 }
