@@ -58,7 +58,7 @@ background-color: #FAF9F6;
 export default function Testimonials() {
     return (
         <div className="testimonials">
-            <Title >Testimonials</Title>
+            <Title data-aos="flip-right">Testimonials</Title>
             <TestimonialsDiv>
             <Testimonial>
                 <Name >Winifred John</Name>
