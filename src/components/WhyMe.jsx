@@ -85,7 +85,7 @@ export default function WhyMe() {
     return (
         <>
             <WhyMeSection>
-                <Title>Why hire me?</Title>
+                <Title data-aos="flip-right">Why hire me?</Title>
                 <Services>
                     <ServiceContainer>
                         <ServiceTitle>Web Development</ServiceTitle>
