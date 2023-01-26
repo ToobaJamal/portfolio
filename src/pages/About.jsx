@@ -61,9 +61,9 @@ export default function About() {
             <br/><br/>
             <Skills>Tools:</Skills> Git, GitHub</Desc>
             <SocialIconContainer>
-            <a href='https://www.linkedin.com/in/tooba-jamal/'><SocialIcon src='./images/linkedin.png'/></a>
-            <a href='https://github.com/ToobaJamal'><SocialIcon src='./images/github.png'/></a>
-            <a href='https://www.linkedin.com/in/tooba-jamal/'><SocialIcon src='./images/insta.png'/></a>
+            <a href='https://www.linkedin.com/in/tooba-jamal/' target="_blank"><SocialIcon src='./images/linkedin.png'/></a>
+            <a href='https://github.com/ToobaJamal' target="_blank"><SocialIcon src='./images/github.png'/></a>
+            <a href='https://www.linkedin.com/in/tooba-jamal/' target="_blank"><SocialIcon src='./images/insta.png'/></a>
             </SocialIconContainer>
         </ContainerDiv>
         </>
