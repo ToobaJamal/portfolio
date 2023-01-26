@@ -3,6 +3,7 @@ import technicalWritingData from "../data/technicalWritingData"
 import {Link, Outlet, useParams} from "react-router-dom"
 import styled from 'styled-components'
 import { Title, Desc, ContainerDiv } from "./About"
+import { ProjHeading } from "../components/Portfolio"
 // import { ProjectImg } from "../components/Portfolio"
 
 
@@ -37,8 +38,8 @@ const SkillsParent = styled.div`
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 40%;
-    border: 1px solid red;
+    height: 42%;
+    background: transparent;
     @media(max-width: 500px) {
         gap: 0.3em;
     }
@@ -92,6 +93,7 @@ const ProjectTitle = styled.p`
         color: #303537;
         border: 1px dotted green;
         text-align: center;
+        font-weight: 600;
         @media (max-width: 440px) {
             font-size: .8em;
         }
@@ -103,7 +105,7 @@ export default function Projects() {
         <ProjectContainer>
             <Link to={`/projects/${project.title}`}>
                 
-                    <ProjectImg src={project.imgUrl} />
+                    <ProjectImg src={project.imgUrl} alt={project.title} loading='lazy'/>
                     <SkillsParent>
                     {project.skills.map(skill => (
                         <Skills>{skill}</Skills>
@@ -117,7 +119,7 @@ export default function Projects() {
     const writingProjects = technicalWritingData.articles.map(article => (
         <ProjectContainer>
         <Link to={`/projects/${article.title}`}>
-                    <ProjectImg src={article.imgUrl} />
+                    <ProjectImg src={article.imgUrl} alt={article.title} loading='lazy'/>
                     <SkillsParent>
                     {article.skills.map(skill => (
                         <Skills>{skill}</Skills>
@@ -136,9 +138,9 @@ export default function Projects() {
             In, nam soluta voluptas libero placeat sapiente quia earum cupiditate, 
             quam numquam eos nobis alias, ullam pariatur ea repudiandae quasi odit molestias!</Desc>}
         
-            {!params.title &&<h3>Web development projects</h3>}
+            {!params.title &&<ProjHeading>Web development projects</ProjHeading>}
             {!params.title && <ProjectsContainerParent> {userProjects} </ProjectsContainerParent>}
-            {!params.title &&<h3>Technical Writing projects</h3>}
+            {!params.title &&<ProjHeading>Technical Writing projects</ProjHeading>}
             {!params.title && <ProjectsContainerParent>{writingProjects}</ProjectsContainerParent>}
             <Outlet/>
         </ContainerDiv>
