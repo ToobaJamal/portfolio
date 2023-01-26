@@ -5,7 +5,7 @@ import { SocialIcon, SocialIconContainer } from './Contact'
 export default function Hire() {
     return (
         <>
-            <ContainerDiv>
+            <ContainerDiv data-aos="zoom-in">
             <Title>Web Developer and Technical Writer</Title>
             <Desc>I'm a web developer and technical writer with a background in machine learning. 
                 I, specialize in <Highlight>front-end development</Highlight> with strong <Highlight>JavaScript</Highlight> and 

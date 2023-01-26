@@ -86,16 +86,16 @@ export default function WhyMe() {
         <>
             <WhyMeSection>
                 <Title data-aos="flip-right">Why hire me?</Title>
-                <Services>
-                    <ServiceContainer>
+                <Services >
+                    <ServiceContainer data-aos="zoom-in">
                         <ServiceTitle>Web Development</ServiceTitle>
                         <ServiceDesc>Turn your idea into a user-friendly website</ServiceDesc>
                     </ServiceContainer>
-                    <ServiceContainer>
+                    <ServiceContainer data-aos="zoom-in">
                         <ServiceTitle>Technical Writing</ServiceTitle>
                         <ServiceDesc>Make complicated topics easy for audience to understand for your blog/ business</ServiceDesc>
                     </ServiceContainer>
-                    <ServiceContainer>
+                    <ServiceContainer data-aos="zoom-in">
                         <ServiceTitle>Code Refactoring</ServiceTitle>
                         <ServiceDesc>Refactor your ugly lookin website into a modern one or kill bugs in your code</ServiceDesc>
                     </ServiceContainer>

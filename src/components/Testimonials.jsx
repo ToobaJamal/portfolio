@@ -60,7 +60,7 @@ export default function Testimonials() {
         <div className="testimonials">
             <Title data-aos="flip-right">Testimonials</Title>
             <TestimonialsDiv>
-            <Testimonial>
+            <Testimonial data-aos="zoom-in">
                 <Name >Winifred John</Name>
                 <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam dapibus eget tortor in lobortis. 
@@ -70,7 +70,7 @@ export default function Testimonials() {
                     Vestibulum vitae felis aliquam, facilisis odio malesuada, tempus justo."
                 </Desc>
             </Testimonial>
-            <Testimonial>
+            <Testimonial data-aos="zoom-in">
                 <Name>Josh Weinstein</Name>
                 <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam dapibus eget tortor in lobortis. 
@@ -80,7 +80,7 @@ export default function Testimonials() {
                     Vestibulum vitae felis aliquam, facilisis odio malesuada, tempus justo."
                 </Desc>
             </Testimonial>
-            <Testimonial>
+            <Testimonial data-aos="zoom-in">
                 <Name>Deeti Singh</Name>
                 <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam dapibus eget tortor in lobortis. 

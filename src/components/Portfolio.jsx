@@ -140,7 +140,7 @@ export default function Portfolio() {
     const webProjects = 
     webDevProjects.map(project => (
      <Link to={`/projects/${project.title}`}>
-     <ProjectContainer>
+     <ProjectContainer data-aos="zoom-in">
          <ArticleTitle>{project.title}</ArticleTitle>
          <ProjectImg src={project.imgUrl} alt={project.title} loading='lazy' />
      </ProjectContainer>
@@ -150,7 +150,7 @@ export default function Portfolio() {
  const techWritingProjects = 
     writingProjects.map(article => (
      <Link to={`/projects/${article.title}`}>
-     <ProjectContainer>
+     <ProjectContainer data-aos="zoom-in">
          <ArticleTitle>{article.title}</ArticleTitle>
          <ProjectImg src={article.imgUrl} alt={article.title} loading='lazy' />
      </ProjectContainer>
