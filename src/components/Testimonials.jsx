@@ -7,14 +7,13 @@ const TestimonialsDiv = styled.div`
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
-    gap: 0.7em;
-    margin-block: 2em;
-    padding-inline: 2em;
-    border: 2px dotted black;
+    justify-content: center;
+    padding-bottom: 2em;
+    gap: 1.4em;
+    margin-top: 2em;
     @media(max-width: 450px) {
         width: 100%;
-        padding-inline: 0;
+        padding-inline: 1em;
         margin-inline: 0;
     }
 `
@@ -23,7 +22,10 @@ const Testimonial = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: #FAF9F6;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 6px;
     align-items: center;
+    padding: 1em;
     max-width: 350px;
     @media (max-width: 860px) and (min-width: 800px){
         max-width: 320px;
@@ -42,25 +44,24 @@ const TestimonialTitle = styled.h1`
 `
 
 const Name = styled.h3`
-   color: red;
+background-color: #FAF9F6;
    margin: 0;
    padding: 0;
  
 `
 const Desc = styled.p`
+background-color: #FAF9F6;
     margin:0;
     padding: 0;
-   color: green;
-
 `
 
 export default function Testimonials() {
     return (
-        <div class="testimonials">
-            <Title>Testimonials</Title>
+        <div className="testimonials">
+            <Title >Testimonials</Title>
             <TestimonialsDiv>
             <Testimonial>
-                <Name>Winifred John</Name>
+                <Name >Winifred John</Name>
                 <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam dapibus eget tortor in lobortis. 
                     Fusce at mi finibus, eleifend nisi et, accumsan nisi. 
