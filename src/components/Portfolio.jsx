@@ -16,9 +16,7 @@ width: 100vw;
 padding-bottom: 1em;
 margin-bottom: 100px;
 `
-const ProjHeading = styled.h3`
-    color: red;
-    border: 2px dotted green;
+export const ProjHeading = styled.h3`
     margin-bottom: 1em;
     font-size: 1.6em;
     @media(max-width: 440px) {
@@ -114,12 +112,23 @@ const Button = styled.button`
 background-color: #DE3163;
 color: #FFF5EE;
 border: none;
+font-weight: 500;
 border-radius: 10px;
+cursor: pointer;
 outline: none;
 padding-block: 0.5em;
 padding-inline: 1em;
 @media (max-width: 505px) {
     font-size: 0.8em;
+}
+`
+
+const PortfolioTitle = styled(Title)`
+@media(max-width: 852px) {
+    margin-top: 100px;
+}
+@media(max-width: 600px) {
+    margin-top: 70px;
 }
 `
 
@@ -133,7 +142,7 @@ export default function Portfolio() {
      <Link to={`/projects/${project.title}`}>
      <ProjectContainer>
          <ArticleTitle>{project.title}</ArticleTitle>
-         <ProjectImg src={project.imgUrl} alt="" />
+         <ProjectImg src={project.imgUrl} alt={project.title} loading='lazy' />
      </ProjectContainer>
      </Link>
     ))
@@ -143,13 +152,13 @@ export default function Portfolio() {
      <Link to={`/projects/${article.title}`}>
      <ProjectContainer>
          <ArticleTitle>{article.title}</ArticleTitle>
-         <ProjectImg src={article.imgUrl} alt="" />
+         <ProjectImg src={article.imgUrl} alt={article.title} loading='lazy' />
      </ProjectContainer>
      </Link>
     ))
     return (
         <>
-        <Title>Portfolio</Title>
+        <PortfolioTitle>Portfolio</PortfolioTitle>
         <ButtonContainer>
             <Button onClick={() => setProjectsType("all")}>All</Button>
             <Button onClick={() => setProjectsType("web-dev")}>Web dev</Button>
