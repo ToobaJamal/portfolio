@@ -140,7 +140,7 @@ export default function Portfolio() {
     const webProjects = 
     webDevProjects.map(project => (
      <Link to={`/projects/${project.title}`}>
-     <ProjectContainer data-aos="zoom-in">
+     <ProjectContainer data-aos="zoom-in" data-aos-duration="1500">
          <ArticleTitle>{project.title}</ArticleTitle>
          <ProjectImg src={project.imgUrl} alt={project.title} loading='lazy' />
      </ProjectContainer>
@@ -150,7 +150,7 @@ export default function Portfolio() {
  const techWritingProjects = 
     writingProjects.map(article => (
      <Link to={`/projects/${article.title}`}>
-     <ProjectContainer data-aos="zoom-in">
+     <ProjectContainer data-aos="zoom-in" data-aos-duration="1500">
          <ArticleTitle>{article.title}</ArticleTitle>
          <ProjectImg src={article.imgUrl} alt={article.title} loading='lazy' />
      </ProjectContainer>
@@ -158,18 +158,18 @@ export default function Portfolio() {
     ))
     return (
         <>
-        <PortfolioTitle data-aos="flip-right">Portfolio</PortfolioTitle>
+        <PortfolioTitle data-aos="flip-right" data-aos-duration="1000">Portfolio</PortfolioTitle>
         <ButtonContainer>
             <Button onClick={() => setProjectsType("all")}>All</Button>
             <Button onClick={() => setProjectsType("web-dev")}>Web dev</Button>
             <Button onClick={() => setProjectsType("writing")}>Technical writing</Button>
         </ButtonContainer>
-        {projectsType === "all" ? <PortfolioDiv ><ProjHeading data-aos="flip-right">Web Development Projects</ProjHeading> <ProjectsContainerParent>{webProjects}</ProjectsContainerParent> 
-        <ProjHeading data-aos="flip-right">Technical Writing Projects</ProjHeading> <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
-        <a href="https://www.freecodecamp.org/news/author/tooba/" className="check-out">Check out more of my writing</a>
+        {projectsType === "all" ? <PortfolioDiv ><ProjHeading data-aos="flip-right" data-aos-duration="1000">Web Development Projects</ProjHeading> <ProjectsContainerParent>{webProjects}</ProjectsContainerParent> 
+        <ProjHeading data-aos="flip-right" data-aos-duration="1000">Technical Writing Projects</ProjHeading> <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
+        <a href="https://www.freecodecamp.org/news/author/tooba/" className="check-out" data-aos="flip-right" data-aos-duration="1000">Check out more of my writing</a>
         </PortfolioDiv > 
-        : projectsType === "web-dev" ? <PortfolioDiv><ProjHeading data-aos="flip-right">Web Development Projects</ProjHeading> {webProjects}</PortfolioDiv> 
-        : projectsType === "writing" ? <PortfolioDiv><ProjHeading data-aos="flip-right">Technical Writing Projects</ProjHeading> {techWritingProjects}</PortfolioDiv> : ""}
+        : projectsType === "web-dev" ? <PortfolioDiv><ProjHeading data-aos="flip-right" data-aos-duration="1000">Web Development Projects</ProjHeading> {webProjects}</PortfolioDiv> 
+        : projectsType === "writing" ? <PortfolioDiv><ProjHeading data-aos="flip-right" data-aos-duration="1000">Technical Writing Projects</ProjHeading> {techWritingProjects} <a href="https://www.freecodecamp.org/news/author/tooba/" className="check-out" data-aos="flip-right" data-aos-duration="1000">Check out more of my writing</a></PortfolioDiv> : ""}
         </>
     )
 }

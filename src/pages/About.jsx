@@ -43,7 +43,7 @@ const Skills = styled.span`
 export default function About() {
     return (
         <>
-        <ContainerDiv data-aos="zoom-in">
+        <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
             
             <Title>About me</Title>
             <Desc>Hi, My name is Tooba. Thank you for stopping by.  <br/><br/>

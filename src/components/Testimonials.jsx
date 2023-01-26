@@ -58,9 +58,9 @@ background-color: #FAF9F6;
 export default function Testimonials() {
     return (
         <div className="testimonials">
-            <Title data-aos="flip-right">Testimonials</Title>
+            <Title data-aos="flip-right" data-aos-duration="1000">Testimonials</Title>
             <TestimonialsDiv>
-            <Testimonial data-aos="zoom-in">
+            <Testimonial data-aos="zoom-in" data-aos-duration="1500">
                 <Name >Winifred John</Name>
                 <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam dapibus eget tortor in lobortis. 
@@ -70,7 +70,7 @@ export default function Testimonials() {
                     Vestibulum vitae felis aliquam, facilisis odio malesuada, tempus justo."
                 </Desc>
             </Testimonial>
-            <Testimonial data-aos="zoom-in">
+            <Testimonial data-aos="zoom-in" data-aos-duration="1500">
                 <Name>Josh Weinstein</Name>
                 <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam dapibus eget tortor in lobortis. 
@@ -80,7 +80,7 @@ export default function Testimonials() {
                     Vestibulum vitae felis aliquam, facilisis odio malesuada, tempus justo."
                 </Desc>
             </Testimonial>
-            <Testimonial data-aos="zoom-in">
+            <Testimonial data-aos="zoom-in" data-aos-duration="1500">
                 <Name>Deeti Singh</Name>
                 <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam dapibus eget tortor in lobortis. 
