@@ -7,7 +7,7 @@ const NavbarDiv = styled.div`
     @media (min-width: 730px) {
         z-index: 1;
         box-shadow: 0 8px 6px -6px #C0C0C0;
-        background-color: #FFFFFF;
+        background-color: #FAF9F6;
         position: fixed;
         top:0;
         width: 100%;
@@ -23,7 +23,7 @@ const NavbarDiv = styled.div`
 const MobileNavbarDiv = styled.div`
  
     box-shadow: 0 -8px 8px -6px #C0C0C0;
-    background-color: #FFFFFF;
+    background-color: #FAF9F6;
     display: flex;
     justify-content: space-between;
     z-index:100;
@@ -57,9 +57,10 @@ const MobileNavbarDiv = styled.div`
 
 const Logo = styled(Link)`
     color: #303537;
+    background-color: inherit;
     font-size: 1.25em;
     font-weight: 600;
-    &:hover {
+    &:hover, &:focus {
     color: #303537;
     text-decoration: none;
     }
@@ -74,27 +75,21 @@ const DividerLine = styled.div`
 
 export const NavbarLink = styled(Link) `
     color: #303537;
+    background-color: inherit;
     font-size: 1.25em;
     font-weight: 600;
-    &:hover,
-    &: focus {
-        color: #DE3163;
-      }
 `
 export const MobileNavbarLink = styled(Link) `
     color: #303537;
+    background-color: inherit;
     font-size: 1em;
     font-weight: 500;
-    &:hover,
-    &: focus {
-        color: #DE3163;
-      }
 `
 
 const LogoMobile = styled(Link)`
     box-shadow: 0 8px 6px -6px #C0C0C0;
     z-index: 100;
-    background-color: #FFFFFF;
+    background-color: #FAF9F6;
     color: #303537;
     font-size: 1.25em;
     display: block;
