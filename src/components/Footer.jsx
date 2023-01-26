@@ -26,6 +26,7 @@ const FooterDiv = styled.div`
 `
 
 const Title = styled.h3`
+background-color: inherit;
     color: #FFFFFF;
     margin: 0.5em 0 0.3em 0;
     font-weight: 500;
@@ -41,6 +42,7 @@ const Title = styled.h3`
 const Text = styled.span`
     color: #FFFFFF;
     margin: 0;
+    background-color: inherit;
     font-size: 0.9em;
     font-weight: 400;
     @media (max-width: 580px) {
@@ -66,6 +68,7 @@ const Explore = styled.div`
     align-items: center;
     gap: 0.3em;
     margin-left: 3em;
+    background-color: inherit;
     `
 const GetInTouch = styled.div`
     display: flex;
@@ -73,6 +76,14 @@ const GetInTouch = styled.div`
     align-items: center;
     gap: 0.3em;
     margin-right: 3em;
+    background-color: inherit;
+`
+
+const FooterLink = styled(Link)`
+    background-color: inherit;
+`
+const FooterLinkSocial = styled.a`
+    background-color: inherit;
 `
 
 export default function Footer() {
@@ -84,16 +95,16 @@ export default function Footer() {
             <FooterDiv>
                 <Explore>
                     <Title>Explore</Title>
-                    <Link to="/about"><Text>About</Text></Link>
-                    <Link to="/hire"><Text>Hire me</Text></Link>
-                    <Link to="/projects"><Text>Portfolio</Text></Link>
+                    <FooterLink to="/about"><Text>About</Text></FooterLink>
+                    <FooterLink to="/hire"><Text>Hire me</Text></FooterLink>
+                    <FooterLink to="/projects"><Text>Portfolio</Text></FooterLink>
                 </Explore>
                 <GetInTouch>
                     <Title>Get in touch</Title>
-                    <Link to="/contact"><Text>Contact</Text></Link>
-                    <Text>LinkedIn</Text>
-                    <Text>Instagram</Text>
-                    <Text>Discord</Text>
+                    <FooterLink to="/contact"><Text>Contact</Text></FooterLink>
+                    <FooterLinkSocial href='https://www.linkedin.com/in/tooba-jamal/'><Text>LinkedIn</Text></FooterLinkSocial>
+                    <FooterLinkSocial href='https://github.com/ToobaJamal'><Text>Instagram</Text></FooterLinkSocial>
+                    <FooterLinkSocial href="https://twitter.com/codingmysoul"><Text>Twitter</Text></FooterLinkSocial>
                 </GetInTouch>
             </FooterDiv>
             <Copyright>© {year} Tooba Jamal - All right Reserved.</Copyright>
