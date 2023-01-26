@@ -22,7 +22,6 @@ const ProjectsContainerParent = styled.div`
     gap: 2.4em;
     transition: 3s ease-in-out;
     padding: 2em;
-    border: 1px solid red;
 `
 
 const SkillsParent = styled.div`
@@ -91,7 +90,6 @@ const ProjectContainer = styled.div`
 
 const ProjectTitle = styled.p`
         color: #303537;
-        border: 1px dotted green;
         text-align: center;
         font-weight: 600;
         @media (max-width: 440px) {

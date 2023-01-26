@@ -12,7 +12,6 @@ const ButtonContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1.5em;
-    border: 1px solid red;
 
     @media(max-width: 400px) {
         width: 250px;
