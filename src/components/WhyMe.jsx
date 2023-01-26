@@ -11,7 +11,7 @@ const WhyMeSection = styled.div`
     padding-block: 1em;
     min-height: 0;
     margin-inline: auto;
-    border: 1px solid red;
+
     @media(max-width: 400px) {
         padding-inline: 1em;
         margin-inline: 0;
@@ -27,7 +27,20 @@ export const Title = styled.h1`
 `
 
 const ServiceContainer = styled.div`
-    max-width: 400px;
+    width: 400px;
+    height: 150px;
+    background-color:#FAF9F6;
+  
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1em;
+    @media(max-width: 500px) {
+        width: 80%;
+        height: auto;
+    }
 `
 
 const Services = styled.div`
@@ -35,26 +48,32 @@ const Services = styled.div`
    flex-flow: row wrap;
    align-items: center;
    justify-content: center;
-   gap: 1em;
+   gap: 1.4em;
    padding: 1em;
    max-width: 1000px;
    min-width: 0;
-   @media(max-width: 400px) {
-    padding: 0;
-   }
+   min-height: 0;
 `
 
 const ServiceTitle = styled.p`
+    background-color: #FFFFF0;
     font-size: 1.3em;
     font-weight: 600;
     margin: 0;
+    @media (max-width: 450px) {
+        font-size: 1em;
+    }
 `
 
 const ServiceDesc = styled.p`
+background-color: #FFFFF0;
     font-size: 1em;
     font-weight: 500;
     margin: 0;
     padding: 1em;
+    @media (max-width: 450px) {
+        font-size: 0.9em;
+    }
     @media (max-width: 400px) {
         width: 100%;
         margin-inline: auto;
@@ -70,7 +89,7 @@ export default function WhyMe() {
                 <Services>
                     <ServiceContainer>
                         <ServiceTitle>Web Development</ServiceTitle>
-                        <ServiceDesc>Turn your idea into a user-friendly website.</ServiceDesc>
+                        <ServiceDesc>Turn your idea into a user-friendly website</ServiceDesc>
                     </ServiceContainer>
                     <ServiceContainer>
                         <ServiceTitle>Technical Writing</ServiceTitle>
