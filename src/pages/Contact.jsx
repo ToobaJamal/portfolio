@@ -13,12 +13,12 @@ export const SocialIconContainer = styled.div`
  `
 
 export const SocialIcon = styled.img`
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     &:hover,
 &:focus {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 `
 // const ContactDesc = styled(Desc)`
