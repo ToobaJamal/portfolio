@@ -66,7 +66,7 @@ export default function Home() {
     
     return (
         <>
-            <IntroSection data-aos="flip-right">
+            <IntroSection data-aos="flip-right" data-aos-duration="1000">
                 <IntroTitleText>Hi, My name is</IntroTitleText>
                 <IntroTitle>Tooba Jamal</IntroTitle>
                 <IntroDesc>I am a front-end web developer and a technical writer</IntroDesc>
