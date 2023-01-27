@@ -18,13 +18,18 @@ const ButtonContainer = styled.div`
     }
 `
 
-const Button = styled.a`
+const Button = styled.button`
     color: #FFF5EE;
     background-color: #DE3163;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.1em;
     padding-inline: 1em;
     padding-block: 0.6em;
     border-radius: 10px;
     margin-bottom: 0.7em;
+    cursor: pointer;
     &:hover{
         background-color: #cf2359;
         color: #FFF5EE;
@@ -32,8 +37,6 @@ const Button = styled.a`
     &:active {
         background-color: #cf2359;
         color: #FFF5EE;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
     }
 
     @media(max-width: 620px) {
@@ -64,9 +67,9 @@ export default function ProjectDetail(props) {
         <>
         <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
             <Title>{thisProject.title}</Title>
-            {thisProject.hasOwnProperty('gitHub') ? <ButtonContainer><Button href={thisProject.link}>Live Demo</Button> 
-            <Button href={thisProject.gitHub}>GitHub</Button> </ButtonContainer> 
-            : <ButtonContainer><Button href={thisProject.link}>Read more</Button></ButtonContainer>}
+            {thisProject.hasOwnProperty('gitHub') ? <ButtonContainer><a href={thisProject.link}><Button>Live Demo</Button></a> 
+            <a href={thisProject.gitHub}><Button>GitHub</Button></a></ButtonContainer> 
+            : <ButtonContainer><a href={thisProject.link}><Button>Read more</Button></a></ButtonContainer>}
             
             <Desc>{thisProject.detail}</Desc>
             <ProjImgContainer>
