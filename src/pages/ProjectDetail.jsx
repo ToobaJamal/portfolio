@@ -49,7 +49,6 @@ const Button = styled.button`
 const ProjImgContainer = styled.div`
     width: 80%;
     margin-inline: auto;
-    border: 1px solid red;
     @media(max-width: 500px) {
         width: 100%;
     }
