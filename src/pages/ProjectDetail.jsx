@@ -60,7 +60,7 @@ export default function ProjectDetail(props) {
     console.log(technicalWritingData.articles.find(article => article.title === "What is an API and How Does it Work? APIs for Beginners"))
     return (
         <>
-        <ContainerDiv>
+        <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
             <Title>{thisProject.title}</Title>
             {thisProject.hasOwnProperty('gitHub') ? <ButtonContainer><Button href={thisProject.link}>Live Demo</Button> 
             <Button href={thisProject.gitHub}>GitHub</Button> </ButtonContainer> 
