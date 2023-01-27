@@ -24,12 +24,13 @@ export const Title = styled.h1`
 export const Desc = styled.div`
     max-width: 1000px;
     margin-inline: auto;
-    padding-inline: 2em;
     margin-bottom: 2em;
     width: 80%;
     font-weight: 500;
+    border: 1px solid red;
     @media(max-width: 500px) {
         width: 100%;
+        text-align: center;
     }
 `
 
