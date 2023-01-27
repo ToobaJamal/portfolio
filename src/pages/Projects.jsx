@@ -130,7 +130,7 @@ export default function Projects() {
 
     return (
         <>
-        <ContainerDiv data-aos="zoom-in">       
+        <ContainerDiv data-aos="zoom-in" data-aos-duration="1000">       
             {!params.title && <Title>Projects</Title>}
             {!params.title &&<Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             In, nam soluta voluptas libero placeat sapiente quia earum cupiditate, 
