@@ -25,6 +25,7 @@ const Button = styled.button`
     outline: none;
     font-size: 1.1em;
     font-weight: 600;
+    letter-spacing: 0.7px;
     padding-inline: 1em;
     padding-block: 0.6em;
     border-radius: 10px;
