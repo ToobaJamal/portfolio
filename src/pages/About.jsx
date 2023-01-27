@@ -9,8 +9,10 @@ export const ContainerDiv = styled.div`
 `
 
 export const Title = styled.h1`
+    max-width: 1000px;
+    width: 80%;
     text-align: center;
-    margin: 0 0 0.7em 0;
+    margin: 0 auto 0.7em;
     padding-top: 60px;
     @media (max-width: 730px) {
         padding-top: 0px;
