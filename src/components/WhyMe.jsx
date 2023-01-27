@@ -28,7 +28,7 @@ export const Title = styled.h1`
 
 const ServiceContainer = styled.div`
     width: 400px;
-    height: 150px;
+    min-height: 150px;
     background-color:#FAF9F6;
     box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 6px;
     display: flex;
@@ -37,7 +37,8 @@ const ServiceContainer = styled.div`
     justify-content: center;
     padding-block: 1em;
     @media(max-width: 500px) {
-        width: 80%;
+        padding: 0;
+        width: 90%;
         height: auto;
     }
 `
@@ -88,15 +89,16 @@ export default function WhyMe() {
                 <Services >
                     <ServiceContainer data-aos="zoom-in" data-aos-duration="1500">
                         <ServiceTitle>Web Development</ServiceTitle>
-                        <ServiceDesc>Turn your idea into a user-friendly website</ServiceDesc>
+                        <ServiceDesc>Turn your idea into a user-friendly and responsive website that fulfils the purpose</ServiceDesc>
                     </ServiceContainer>
                     <ServiceContainer data-aos="zoom-in" data-aos-duration="1500">
                         <ServiceTitle>Technical Writing</ServiceTitle>
-                        <ServiceDesc>Make complicated topics easy for audience to understand for your blog/ business</ServiceDesc>
+                        <ServiceDesc>Make complicated topics/technical products easy for your audience to understand.</ServiceDesc>
                     </ServiceContainer>
                     <ServiceContainer data-aos="zoom-in" data-aos-duration="1500">
                         <ServiceTitle>Code Refactoring</ServiceTitle>
-                        <ServiceDesc>Refactor your ugly lookin website into a modern one or kill bugs in your code</ServiceDesc>
+                        <ServiceDesc>Ugly looking website are a threat and bugs are intimidating. 
+                            Fix them with me to fix your business.</ServiceDesc>
                     </ServiceContainer>
                 </Services>
             </WhyMeSection>
