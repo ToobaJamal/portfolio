@@ -112,6 +112,7 @@ const Button = styled.button`
 background-color: #DE3163;
 color: #FFF5EE;
 border: none;
+font-size: 1.2em;
 font-weight: 500;
 border-radius: 10px;
 cursor: pointer;
@@ -161,8 +162,8 @@ export default function Portfolio() {
         <PortfolioTitle data-aos="flip-right" data-aos-duration="1000">Portfolio</PortfolioTitle>
         <ButtonContainer>
             <Button onClick={() => setProjectsType("all")}>All</Button>
-            <Button onClick={() => setProjectsType("web-dev")}>Web dev</Button>
-            <Button onClick={() => setProjectsType("writing")}>Technical writing</Button>
+            <Button onClick={() => setProjectsType("web-dev")}>Web Development</Button>
+            <Button onClick={() => setProjectsType("writing")}>Technical Writing</Button>
         </ButtonContainer>
         {projectsType === "all" ? <PortfolioDiv ><ProjHeading data-aos="flip-right" data-aos-duration="1000">Web Development Projects</ProjHeading> <ProjectsContainerParent>{webProjects}</ProjectsContainerParent> 
         <ProjHeading data-aos="flip-right" data-aos-duration="1000">Technical Writing Projects</ProjHeading> <ProjectsContainerParent>{techWritingProjects}</ProjectsContainerParent> 
