@@ -27,9 +27,11 @@ const Button = styled.a`
     margin-bottom: 0.7em;
     &:hover{
         background-color: #cf2359;
+        color: #FFF5EE;
         }
     &:active {
         background-color: #cf2359;
+        color: #FFF5EE;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
     }
