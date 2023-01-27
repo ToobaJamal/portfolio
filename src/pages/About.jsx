@@ -14,9 +14,10 @@ export const Title = styled.h1`
     padding-top: 60px;
     @media (max-width: 730px) {
         padding-top: 0px;
+        font-size: 1.8em;
     }
     @media (max-width: 450px) {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 `
 
