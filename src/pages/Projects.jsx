@@ -144,7 +144,7 @@ export default function Projects() {
             {!params.title &&<ProjHeading>Technical Writing projects</ProjHeading>}
             {!params.title && <ProjectsContainerParent>{writingProjects} </ProjectsContainerParent>}
             <a href="https://www.freecodecamp.org/news/author/tooba/" 
-        className="check-out">Check out more of my writing</a>
+        className="check-out">Check out more of my writing 📢</a>
             <Outlet/>
         </ProjectsContainerDiv>
         </>

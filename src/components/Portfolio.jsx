@@ -175,7 +175,7 @@ export default function Portfolio() {
         </PortfolioDiv > 
         : projectsType === "web-dev" ? <PortfolioDiv><ProjHeading data-aos="flip-right" data-aos-duration="1000">Web Development Projects</ProjHeading> {webProjects}</PortfolioDiv> 
         : projectsType === "writing" ? <PortfolioDiv><ProjHeading data-aos="flip-right" data-aos-duration="1000">Technical Writing Projects</ProjHeading> {techWritingProjects} <a href="https://www.freecodecamp.org/news/author/tooba/" 
-        className="check-out" data-aos="flip-right" data-aos-duration="1000">Check out more of my writing</a></PortfolioDiv> : ""}
+        className="check-out" data-aos="flip-right" data-aos-duration="1000">Check out more of my writing 📢</a></PortfolioDiv> : ""}
         </>
     )
 }
