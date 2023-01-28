@@ -2,7 +2,7 @@ import projectsData from "../data/projectsData"
 import technicalWritingData from "../data/technicalWritingData"
 import {Link, Outlet, useParams} from "react-router-dom"
 import styled from 'styled-components'
-import { Title, Desc, ContainerDiv } from "./About"
+import { Title, Desc, ContainerDiv, Highlight } from "./About"
 import { ProjHeading } from "../components/Portfolio"
 // import { ProjectImg } from "../components/Portfolio"
 
@@ -132,18 +132,17 @@ export default function Projects() {
         <>
         <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">       
             {!params.title && <Title>Projects</Title>}
-            {!params.title &&<Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            In, nam soluta voluptas libero placeat sapiente quia earum cupiditate, 
-            quam numquam eos nobis alias, ullam pariatur ea repudiandae quasi odit molestias!</Desc>}
+            {!params.title &&<Desc>These are a few projects that showcase my <Highlight>front-end development</Highlight> and <Highlight>technical writing</Highlight> skills. The toolset 
+                ranges from <Highlight>HTML/ CSS</Highlight> to <Highlight>vanilla JavaScript, React, and Machine Learning</Highlight>. Click on any project to dive deeper into it.</Desc>}
         
             {!params.title &&<ProjHeading>Web development projects</ProjHeading>}
             {!params.title && <ProjectsContainerParent> {userProjects} </ProjectsContainerParent>}
             {!params.title &&<ProjHeading>Technical Writing projects</ProjHeading>}
             {!params.title && <ProjectsContainerParent>{writingProjects} </ProjectsContainerParent>}
-            <div class="checkout-parent">
+            {!params.title && <div class="checkout-parent">
             <a href="https://www.freecodecamp.org/news/author/tooba/" 
         className="check-out">Check out more of my writing 📢</a>
-            </div>
+            </div>}
             <Outlet/>
         </ContainerDiv>
         </>
