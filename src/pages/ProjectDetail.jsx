@@ -1,7 +1,7 @@
 import {useParams, Outlet} from "react-router-dom"
 import projectsData from "../data/projectsData"
 import technicalWritingData from "../data/technicalWritingData"
-import { ContainerDiv, Desc,Title } from "./About"
+import { ContainerDiv, Desc,Title, Highlight } from "./About"
 import styled from "styled-components"
 
 const ButtonContainer = styled.div`
@@ -59,7 +59,22 @@ const ProjImg = styled.img`
     width: 100%;
     
 `
+const ProjHighlight = styled(Highlight)`
+    font-weight: 500;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
 
+    @media(max-width: 600px) {
+        font-size: 1.1em;
+    }
+    @media(max-width: 430px) {
+        font-size: 1em;
+    }
+`
 export default function ProjectDetail(props) {
     const { title } = useParams()
     console.log(technicalWritingData)
@@ -74,7 +89,7 @@ export default function ProjectDetail(props) {
             {thisProject.hasOwnProperty('gitHub') ? <ButtonContainer><a href={thisProject.link}><Button>Live Demo</Button></a> 
             <a href={thisProject.gitHub}><Button>GitHub</Button></a></ButtonContainer> 
             : <ButtonContainer><a href={thisProject.link}><Button>Read more</Button></a></ButtonContainer>}
-            
+            <ProjHighlight>{thisProject.hook}</ProjHighlight>
             <Desc>{thisProject.detail}</Desc>
             <ProjImgContainer>
                 <ProjImg src={thisProject.imgUrl} alt=""/>
