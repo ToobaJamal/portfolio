@@ -13,7 +13,7 @@ export const Title = styled.h1`
     width: 80%;
     text-align: center;
     margin: 0 auto 0.7em;
-    padding-top: 65px;
+    padding-top: 70px;
     @media (max-width: 730px) {
         padding-top: 0px;
         font-size: 1.8em;
@@ -24,7 +24,7 @@ export const Title = styled.h1`
 `
 
 export const Desc = styled.div`
-    max-width: 1000px;
+   
     margin-inline: auto;
     margin-bottom: 2em;
     width: 80%;
@@ -38,7 +38,7 @@ export const Desc = styled.div`
 export const Highlight = styled.span`
     color: #DE3163;
 `
-const Skills = styled.span`
+export const Skills = styled.span`
     font-weight: 600;
     font-size: 1.2em;
    `
