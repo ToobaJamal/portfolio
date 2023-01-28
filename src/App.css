@@ -47,8 +47,8 @@ a:hover, a:focus {
 
 .check-out {
   margin-top: 0.5em;
-  padding-right: 2em;
-  text-align: center;
+  padding-inline: auto;
+  margin-inline: auto;
   font-weight: 600;
 }
 
