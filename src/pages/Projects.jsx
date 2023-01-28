@@ -96,6 +96,9 @@ const ProjectTitle = styled.p`
             font-size: .8em;
         }
 `
+const ProjectsContainerDiv = styled(ContainerDiv)`
+        text-align: center;
+`
 
 export default function Projects() {
     const params = useParams()
@@ -130,7 +133,7 @@ export default function Projects() {
 
     return (
         <>
-        <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">       
+        <ProjectsContainerDiv data-aos="zoom-in" data-aos-duration="1500">       
             {!params.title && <Title>Projects</Title>}
             {!params.title &&<Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             In, nam soluta voluptas libero placeat sapiente quia earum cupiditate, 
@@ -143,7 +146,7 @@ export default function Projects() {
             <a href="https://www.freecodecamp.org/news/author/tooba/" 
         className="check-out">Check out more of my writing 📢</a>
             <Outlet/>
-        </ContainerDiv>
+        </ProjectsContainerDiv>
         </>
     )
 }
