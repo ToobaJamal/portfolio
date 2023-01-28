@@ -25,10 +25,17 @@ export const SocialIcon = styled.img`
 //     margin-bottom: 3em;
 // `
 
+const ContactContainerDiv = styled.div`
+margin-inline: auto;
+max-width: 1000px;
+margin-block: 2em;
+width: 90%;
+
+`
 export default function Contact() {
     return (
         <>
-        <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
+        <ContactContainerDiv data-aos="zoom-in" data-aos-duration="1500">
             <Title>Let's have a talk</Title>
             <Desc>
                 Interested in building great things together? I am here to help you.
@@ -43,7 +50,7 @@ export default function Contact() {
             <a href='https://www.linkedin.com/in/tooba-jamal/' target="_blank"><SocialIcon src='./images/insta.png'/></a>
             <a href='https://twitter.com/codingmysoul' target="_blank"><SocialIcon src='./images/twitter.png'/></a>
             </SocialIconContainer>
-        </ContainerDiv>
+        </ContactContainerDiv>
         
         </>
     )
