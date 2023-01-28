@@ -52,7 +52,10 @@ a:hover, a:focus {
   font-weight: 600;
 }
 
-
+.checkout-parent {
+  border: 1px solid pink;
+  text-align: center;
+}
 
 
 @media (max-width: 730px) {
