@@ -1,4 +1,4 @@
-import { ContainerDiv, Desc, Title } from './About'
+import { ContainerDiv, Desc, Title, Skills } from './About'
 import styled from 'styled-components'
 
 export const SocialIconContainer = styled.div`
@@ -31,12 +31,17 @@ export default function Contact() {
         <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
             <Title>Let's have a talk</Title>
             <Desc>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Interested in building great things together? I am here to help you.
+                Please send me an email at <Skills>tj.toobajamal@gmail.com</Skills>
+            </Desc>
+            <Desc>
+                I know you like trusty friends and I love making new ones. Hit me up on your favorite social platform ⤵️
             </Desc>
             <SocialIconContainer>
             <a href='https://www.linkedin.com/in/tooba-jamal/' target="_blank"><SocialIcon src='./images/linkedin.png'/></a>
             <a href='https://github.com/ToobaJamal' target="_blank"><SocialIcon src='./images/github.png'/></a>
             <a href='https://www.linkedin.com/in/tooba-jamal/' target="_blank"><SocialIcon src='./images/insta.png'/></a>
+            <a href='https://twitter.com/codingmysoul' target="_blank"><SocialIcon src='./images/twitter.png'/></a>
             </SocialIconContainer>
         </ContainerDiv>
         
