@@ -108,6 +108,7 @@ const ButtonContainer = styled.div`
      }
 `
 
+
 const Button = styled.button`
 background-color: #DE3163;
 color: #FFF5EE;
@@ -119,7 +120,10 @@ cursor: pointer;
 outline: none;
 padding-block: 0.5em;
 padding-inline: 1em;
-@media (max-width: 505px) {
+@media (max-width: 605px) {
+    font-size: 1em;
+}
+@media (max-width: 470px) {
     font-size: 0.8em;
 }
 `
