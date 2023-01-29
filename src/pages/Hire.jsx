@@ -26,6 +26,7 @@ export default function Hire() {
             <a href='https://www.linkedin.com/in/tooba-jamal/'><SocialIcon src='./images/linkedin.png'/></a>
             <a href='https://github.com/ToobaJamal'><SocialIcon src='./images/github.png'/></a>
             <a href='https://www.linkedin.com/in/tooba-jamal/'><SocialIcon src='./images/insta.png'/></a>
+            <a href='https://twitter.com/codingmysoul'><SocialIcon src='./images/twitter.png'/></a>
             </SocialIconContainer>
             </ContainerDiv>
         </>
