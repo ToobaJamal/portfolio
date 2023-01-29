@@ -9,6 +9,7 @@ export const SocialIconContainer = styled.div`
     margin-inline: auto;
     @media(max-width: 400px) {
         width: 200px;
+        gap: 0.5em;
     }
  `
 
