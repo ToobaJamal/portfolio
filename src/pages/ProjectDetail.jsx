@@ -77,11 +77,8 @@ const ProjHighlight = styled(Highlight)`
 `
 export default function ProjectDetail(props) {
     const { title } = useParams()
-    console.log(technicalWritingData)
-    console.log(title)
     const thisProject = projectsData.projects.find(project => project.title === title) || 
     technicalWritingData.articles.find(article => article.title == title)
-    console.log(technicalWritingData.articles.find(article => article.title === "What is an API and How Does it Work? APIs for Beginners"))
     return (
         <>
         <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">
