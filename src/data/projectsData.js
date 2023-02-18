@@ -12,10 +12,11 @@ const projectsData = {
       imgUrl:
           "https://i.ibb.co/JKmyxZH/little-lemon.png",
         skills: ["HTML", "CSS", "React", "Controlled components"],
-        hook: `You don't have to spend $$ to kill boredom!`,
-        detail: `This quiz app uses opentdb API to fetch random quiz questions and scores players based on their answers. 
-        It allows the users to check the history of their scores, play as many times as they want!
-        It's built with React(useState, useContext, useEffect and React Router), which makes it very easy to use.`
+        hook: `Little Lemon table reservation is just a click away!`,
+        detail: `Little Lemon Web App is a simple and easy-to-use restaurant reservation system built using React. 
+        With just a few clicks, users can reserve a table at Little Lemon restaurant and receive a booking confirmation.
+        The Home page gives an overview of the restaurant and its services and the rservations page enables the users to book a table.
+        It's built with React(useState, useReducer, and React Router), which makes it very easy to use.`
       },
       {
         title: "Quizzical",
