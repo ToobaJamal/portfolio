@@ -21,10 +21,10 @@ const TestimonialsDiv = styled.div`
 const Testimonial = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    
     background-color: #FAF9F6;
     box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 6px;
-    align-items: center;
+   
     padding: 1em;
     max-width: 350px;
     @media (max-width: 860px) and (min-width: 800px){
@@ -61,35 +61,29 @@ export default function Testimonials() {
             <Title data-aos="flip-right" data-aos-duration="1000">Testimonials</Title>
             <TestimonialsDiv>
             <Testimonial data-aos="zoom-in" data-aos-duration="1500">
-                <Name >Winifred John</Name>
-                <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam dapibus eget tortor in lobortis. 
-                    Fusce at mi finibus, eleifend nisi et, accumsan nisi. 
-                    Maecenas non felis augue. 
-                    Etiam lobortis, arcu quis ornare dapibus, eros odio mattis metus, mattis semper justo lorem id odio. 
-                    Vestibulum vitae felis aliquam, facilisis odio malesuada, tempus justo."
+                <Name >Per Harald Borgen - CEO Scrimba</Name>
+                <Desc>"Tooba has shown to have strong HTML, CSS, and JavaScript skills through 
+                    giving code reviews in the Scrimba community. She excels at scanning through codebases, 
+                    finding the areas that need improvement, and suggesting technical solutions for the given problems. 
+                    Giving these code reviews is something only a small subset of Scrimba students do. 
+                    However, Tooba, has done it time and again without ever asking for anything in return, 
+                    displaying great qualities as a team player."
+                </Desc>
+            </Testimonial>
+            <div className='testimonial-divider'>
+            <Testimonial data-aos="zoom-in" data-aos-duration="1500" className='middle-testimonial'>
+                <Name>JWinifred John - Technical Writer</Name>
+                <Desc>"I really loved your article on API, even a two year old could understand it ."
                 </Desc>
             </Testimonial>
             <Testimonial data-aos="zoom-in" data-aos-duration="1500">
-                <Name>Josh Weinstein</Name>
-                <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam dapibus eget tortor in lobortis. 
-                    Fusce at mi finibus, eleifend nisi et, accumsan nisi. 
-                    Maecenas non felis augue. 
-                    Etiam lobortis, arcu quis ornare dapibus, eros odio mattis metus, mattis semper justo lorem id odio. 
-                    Vestibulum vitae felis aliquam, facilisis odio malesuada, tempus justo."
+                <Name>Josh Weinsten - Software Engineer</Name>
+                <Desc>"I enjoyed your fcc article on APIs. 
+                    While I’ve worked with them quite a bit and read other explanations, 
+                    I found this one particularly clear and informative!"
                 </Desc>
             </Testimonial>
-            <Testimonial data-aos="zoom-in" data-aos-duration="1500">
-                <Name>Deeti Singh</Name>
-                <Desc>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam dapibus eget tortor in lobortis. 
-                    Fusce at mi finibus, eleifend nisi et, accumsan nisi. 
-                    Maecenas non felis augue. 
-                    Etiam lobortis, arcu quis ornare dapibus, eros odio mattis metus, mattis semper justo lorem id odio. 
-                    Vestibulum vitae felis aliquam, facilisis odio malesuada, tempus justo."
-                </Desc>
-            </Testimonial>
+            </div>
             </TestimonialsDiv>
         </div>
     )
