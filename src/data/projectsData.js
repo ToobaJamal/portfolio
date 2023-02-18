@@ -11,7 +11,7 @@ const projectsData = {
         gitHub: "https://github.com/ToobaJamal/meta-front-end-capstone",
       imgUrl:
           "https://i.ibb.co/JKmyxZH/little-lemon.png",
-        skills: ["HTML", "CSS", "React", "API"],
+        skills: ["HTML", "CSS", "React", "Controlled components"],
         hook: `You don't have to spend $$ to kill boredom!`,
         detail: `This quiz app uses opentdb API to fetch random quiz questions and scores players based on their answers. 
         It allows the users to check the history of their scores, play as many times as they want!
