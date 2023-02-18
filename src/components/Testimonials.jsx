@@ -72,7 +72,7 @@ export default function Testimonials() {
             </Testimonial>
             <div className='testimonial-divider'>
             <Testimonial data-aos="zoom-in" data-aos-duration="1500" className='middle-testimonial'>
-                <Name>JWinifred John - Technical Writer</Name>
+                <Name>Winifred John - Technical Writer</Name>
                 <Desc>"I really loved your article on API, even a two year old could understand it ."
                 </Desc>
             </Testimonial>
