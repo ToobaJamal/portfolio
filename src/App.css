@@ -56,6 +56,13 @@ a:hover, a:focus {
   text-align: center;
 }
 
+.middle-testimonial {
+  margin-bottom: 2em;
+}
+
+.testimonial-divider {
+  padding: 0.5em;
+}
 
 @media (max-width: 730px) {
   body {
