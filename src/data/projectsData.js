@@ -6,6 +6,18 @@ const projectsData = {
     
     projects: [
       {
+        title: "Little Lemon Restaurant",
+        link: "https://littlelemonrestaurantt.netlify.app/",
+        gitHub: "https://github.com/ToobaJamal/meta-front-end-capstone",
+      imgUrl:
+          "https://i.ibb.co/JKmyxZH/little-lemon.png",
+        skills: ["HTML", "CSS", "React", "API"],
+        hook: `You don't have to spend $$ to kill boredom!`,
+        detail: `This quiz app uses opentdb API to fetch random quiz questions and scores players based on their answers. 
+        It allows the users to check the history of their scores, play as many times as they want!
+        It's built with React(useState, useContext, useEffect and React Router), which makes it very easy to use.`
+      },
+      {
         title: "Quizzical",
         link: "https://quizzicalapptj.netlify.app/",
         gitHub: "https://github.com/ToobaJamal/quizzical",
