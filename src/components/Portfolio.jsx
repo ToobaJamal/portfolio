@@ -73,11 +73,11 @@ position: relative;
 `
 
 const ProjectsContainerParent = styled.div`
-    max-width: 850px;
+    max-width: 1000px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 0.6em;
+    gap: 0.8em;
     margin-bottom: 1em;
     @media (max-width: 470px) {
         width: 380px;
@@ -107,7 +107,6 @@ const ButtonContainer = styled.div`
         gap: 0.4em;
      }
 `
-
 
 const Button = styled.button`
 background-color: #DE3163;

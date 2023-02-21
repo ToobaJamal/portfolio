@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Title } from "../components/WhyMe"
 
 const TestimonialsDiv = styled.div`
-    max-width: 850px;
+    max-width: 1000px;
     margin-inline: auto;
     display: flex;
     flex-flow: row wrap;
