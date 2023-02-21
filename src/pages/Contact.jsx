@@ -1,6 +1,6 @@
 import { ContainerDiv, Desc, Title, Skills } from './About'
 import styled from 'styled-components'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 export const SocialIconContainer = styled.div`
@@ -60,7 +60,7 @@ const Textarea = styled.textarea`
     width: 100%;
     height: 200px;
     padding: 10px;
-    font-size: 16px;
+    
     border: 2.5px solid #ccc;
     border-radius: 4px;
     resize: none;
@@ -105,13 +105,33 @@ const Label = styled.label`
         font-size: 0.8rem;
     }
 `
+
 export default function Contact() {
     console.log(import.meta.env.VITE_REACT_YOUR_SERVICE_ID)
     const form = useRef()
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
+  function handleEmailChange(event) {
+    setEmail(event.target.value);
+    if (!event.target.validity.valid) {
+      event.target.setCustomValidity("Please enter a valid email address.");
+    } else {
+      event.target.setCustomValidity("");
+    }
+  }
+
+  function handleMessageChange(event) {
+    setMessage(event.target.value);
+    if (!event.target.validity.valid) {
+      event.target.setCustomValidity("Please send a messsage of at least 10 characters.");
+    } else {
+      event.target.setCustomValidity("");
+    }
+  }
     const sendEmail = (e) => {
         e.preventDefault()
-
+       
         emailjs.sendForm(import.meta.env.VITE_REACT_YOUR_SERVICE_ID, 
             import.meta.env.VITE_REACT_YOUR_TEMPLATE_ID, form.current, 
             import.meta.env.VITE_REACT_YOUR_PUBLIC_KEY)
@@ -131,11 +151,17 @@ export default function Contact() {
             </Desc>
             <Form ref={form} onSubmit={sendEmail}>
                 <Label>Name</Label>
-                <NameEmail type="text" name="user_name" />
+                <NameEmail type="text" name="user_name" required pattern="[A-Za-z]+" placeholder='Full name'/>
                 <Label>Email</Label>
-                <NameEmail type="email" name="user_email" />
+                <NameEmail type="email" 
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+                name="user_email" placeholder='sampleemail@gmail.com' 
+                value={email}
+                onChange={handleEmailChange}required/>
                 <Label>Message</Label>
-                <Textarea name="message" rows="4" cols="50"/>
+                <Textarea minLength={10} name="message" rows="4" cols="50" placeholder='Message...' 
+                value={message}
+                onChange={handleMessageChange} required/>
                 <Submit type="submit" value="Send" />
             </Form>
             <Desc>
