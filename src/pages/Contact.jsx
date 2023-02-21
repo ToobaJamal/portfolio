@@ -42,6 +42,15 @@ export default function Contact() {
                 Interested in building great things together? I am here to help you.
                 Please send me an email at <Skills>tj.toobajamal@gmail.com</Skills>
             </Desc>
+            <form ref={form} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <input type="submit" value="Send" />
+            </form>
             <Desc>
                 I know you like trusty friends and I love making new ones. Hit me up on your favorite social platform ⤵️
             </Desc>
