@@ -107,7 +107,6 @@ const Label = styled.label`
 `
 
 export default function Contact() {
-    console.log(import.meta.env.VITE_REACT_YOUR_SERVICE_ID)
     const form = useRef()
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
