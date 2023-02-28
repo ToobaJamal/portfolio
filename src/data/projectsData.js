@@ -5,19 +5,19 @@ const projectsData = {
     email: "tj.toobajamal@gmail.com",
     
     projects: [
-      {
-        title: "Little Lemon Restaurant",
-        link: "https://littlelemonrestaurantt.netlify.app/",
-        gitHub: "https://github.com/ToobaJamal/meta-front-end-capstone",
-      imgUrl:
-          "https://i.ibb.co/JKmyxZH/little-lemon.png",
-        skills: ["HTML", "CSS", "React", "Controlled components"],
-        hook: `Little Lemon table reservation is just a click away!`,
-        detail: `Little Lemon Web App is a simple and easy-to-use restaurant reservation system built using React. 
-        With just a few clicks, users can reserve a table at Little Lemon restaurant and receive a booking confirmation.
-        The Home page gives an overview of the restaurant and its services and the rservations page enables the users to book a table.
-        It's built with React(useState, useReducer, and React Router), which makes it very easy to use.`
-      },
+      // {
+      //   title: "Little Lemon Restaurant",
+      //   link: "https://littlelemonrestaurantt.netlify.app/",
+      //   gitHub: "https://github.com/ToobaJamal/meta-front-end-capstone",
+      // imgUrl:
+      //     "https://i.ibb.co/JKmyxZH/little-lemon.png",
+      //   skills: ["HTML", "CSS", "React", "Controlled components"],
+      //   hook: `Little Lemon table reservation is just a click away!`,
+      //   detail: `Little Lemon Web App is a simple and easy-to-use restaurant reservation system built using React. 
+      //   With just a few clicks, users can reserve a table at Little Lemon restaurant and receive a booking confirmation.
+      //   The Home page gives an overview of the restaurant and its services and the rservations page enables the users to book a table.
+      //   It's built with React(useState, useReducer, and React Router), which makes it very easy to use.`
+      // },
       {
         title: "Quizzical",
         link: "https://quizzicalapptj.netlify.app/",
