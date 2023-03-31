@@ -1,7 +1,7 @@
 # [Personal portfolio website](https://toobajamal.netlify.app)
 
 ## Description
-This is my personal portfolio website showcasing my skills and expertise built in React. 
+My fully responsive personal portfolio website showcasing my skills and expertise built in React. 
 
 ## Technologies Used: 
 ![REACT BADGE](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
