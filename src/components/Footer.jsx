@@ -103,7 +103,7 @@ export default function Footer() {
                     <Title>Get in touch</Title>
                     <FooterLink to="/contact"><Text>Contact</Text></FooterLink>
                     <FooterLinkSocial href='https://www.linkedin.com/in/tooba-jamal/'><Text>LinkedIn</Text></FooterLinkSocial>
-                    <FooterLinkSocial href='https://github.com/ToobaJamal'><Text>Instagram</Text></FooterLinkSocial>
+                    <FooterLinkSocial href='https://www.instagram.com/codingmysoul/'><Text>Instagram</Text></FooterLinkSocial>
                     <FooterLinkSocial href="https://twitter.com/codingmysoul"><Text>Twitter</Text></FooterLinkSocial>
                 </GetInTouch>
             </FooterDiv>
