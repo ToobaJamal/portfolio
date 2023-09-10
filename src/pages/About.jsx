@@ -52,15 +52,15 @@ export default function About() {
             <Desc>Hi, My name is Tooba. Thank you for stopping by.  <br/><br/>
                 I hold a master's degree in Data Engineering and have a background in machine learning. I discovered my love for <Highlight>JavaScript </Highlight>
                 and <Highlight>web development</Highlight> and started learning it. And now I spend most of my day building interactive web experiences.  
-            I have always loved writing and started writing <Highlight>technical articles</Highlight> back in 2021. I got accepted as an author at famous 
-            publications including <Highlight>Towards Data Science</Highlight> and <Highlight>FreeCodeCamp</Highlight> and received great feedback from users. 
-            They say I make complex topics easy to be understood.  
+            I have always loved writing and started writing <Highlight>technical articles</Highlight> back in 2021. I write technical articles at famous 
+            publications including <Highlight>Towards Data Science</Highlight>, <Highlight>FreeCodeCamp</Highlight>, and <Highlight>Ably</Highlight> received great feedback from users. 
+            They say I make complex topics easy to understand.  
             I have always enjoyed learning new things as I believe learning is growing. <br/><br/>
             Currently, I am a freelance web developer and technical writer looking for life-changing opportunities. I'd love to help you build a website or technical document that's clear and efficient—one that gets the job done and doesn't get in the way of your business.
             <br/><br/>
-            <Skills>Languages:</Skills> JavaScript , HTML5, CSS, Python for machine learning
+            <Skills>Languages:</Skills> JavaScript , HTML5, CSS, Python
             <br/><br/>
-            <Skills>Frameworks/Libraries:</Skills> React.js, Styled-Components, webpack, npm, babel
+            <Skills>Frameworks/Libraries:</Skills> React.js, Tailwind CSS, Styled-Components, Node, Express
             <br/><br/>
             <Skills>Tools:</Skills> Git, GitHub</Desc>
             <SocialIconContainer>

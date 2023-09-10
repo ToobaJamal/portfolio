@@ -132,7 +132,7 @@ export default function Projects() {
         <>
         <ContainerDiv data-aos="zoom-in" data-aos-duration="1500">       
             {!params.title && <Title>Projects</Title>}
-            {!params.title &&<Desc>These are a few projects that showcase my <Highlight>front-end development</Highlight> and <Highlight>technical writing</Highlight> skills. The toolset 
+            {!params.title &&<Desc>These are a few projects that showcase my <Highlight>web development</Highlight> and <Highlight>technical writing</Highlight> skills. The toolset 
                 ranges from <Highlight>HTML/ CSS</Highlight> to <Highlight>vanilla JavaScript, React, and Machine Learning</Highlight>. Click on any project to dive deeper into it.</Desc>}
         
             {!params.title &&<ProjHeading>Web development projects</ProjHeading>}

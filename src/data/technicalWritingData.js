@@ -1,6 +1,17 @@
 const technicalWritingData = {
     articles: [
       {
+        title: "How to use Google Charts with React for Dynamic Data",
+        link: "https://ably.com/blog/how-to-use-google-charts-with-react",
+        imgUrl:
+          "https://i.ibb.co/XJN5Sjh/how-to-use-google-charts-with-react.webp",
+          skills: ["Technical Writing", "Web Development", "Data Analysis"],
+          detail: `According to research from Matillon and IDG, data volumes increase by 63 percent per month on average in an organization. 
+          Examining such substantial volumes of data without the right tools makes it impossible to make informed decisions, even in small businesses. 
+          The key to deriving useful and profit-driving insights from data is data visualization - 
+          which turns complex raw figures into meaningful visual representations of the data.`
+      },
+      {
         title: "How to Use Props in React",
         link: "https://www.freecodecamp.org/news/props-in-react/",
       imgUrl:
