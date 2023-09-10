@@ -5,19 +5,18 @@ const projectsData = {
     email: "tj.toobajamal@gmail.com",
     
     projects: [
-      // {
-      //   title: "Little Lemon Restaurant",
-      //   link: "https://littlelemonrestaurantt.netlify.app/",
-      //   gitHub: "https://github.com/ToobaJamal/meta-front-end-capstone",
-      // imgUrl:
-      //     "https://i.ibb.co/JKmyxZH/little-lemon.png",
-      //   skills: ["HTML", "CSS", "React", "Controlled components"],
-      //   hook: `Little Lemon table reservation is just a click away!`,
-      //   detail: `Little Lemon Web App is a simple and easy-to-use restaurant reservation system built using React. 
-      //   With just a few clicks, users can reserve a table at Little Lemon restaurant and receive a booking confirmation.
-      //   The Home page gives an overview of the restaurant and its services and the rservations page enables the users to book a table.
-      //   It's built with React(useState, useReducer, and React Router), which makes it very easy to use.`
-      // },
+      {
+        title: "Data Chum",
+        link: "https://datachum.netlify.app/",
+        gitHub: "https://github.com/ToobaJamal/DataChum",
+      imgUrl:
+          "https://i.ibb.co/RbjvzVk/datachum-img.png",
+        skills: ["React", "Tailwind CSS"],
+        hook: `Unlock the power of data with no programming skills!`,
+        detail: `is a no-code data analysis website built in React. The users can upload their dataset and perform analysis including 
+        summary statistics and a variety of data visualisation options. Users also have the option of downloading their analysis as 
+        an image on their machine.`
+      },
       {
         title: "Quizzical",
         link: "https://quizzicalapptj.netlify.app/",
@@ -29,20 +28,6 @@ const projectsData = {
         detail: `This quiz app uses opentdb API to fetch random quiz questions and scores players based on their answers. 
         It allows the users to check the history of their scores, play as many times as they want!
         It's built with React(useState, useContext, useEffect and React Router), which makes it very easy to use.`
-      },
-      {
-        title: "Chrome Dashboard",
-        link: "https://personalchromedashboard.netlify.app/",
-      gitHub: "https://github.com/ToobaJamal/chrome-dashboard",
-        imgUrl:
-          "https://i.ibb.co/zQrC0bY/chrome-dashboard.png",
-          skills: ["HTML", "CSS", "JavaScript", "API"],
-          hook: `Keep track of your day without going through ten separate apps.`,
-          detail: `This project was built using Vanilla JavaScript, and it uses Unsplash API as the background image provider. 
-          The weather is based on the user's location using OpenWeatherMap API, and quotes are displayed using quotable api.
-          The user can select "Keep record of daily main focus" and a todo list, 
-          which will be saved on the Chrome personal dashboard.
-          This personal dashboard can be used to keep track of your daily tasks.`
       },
       {
         title: "Color Scheme Generator",
